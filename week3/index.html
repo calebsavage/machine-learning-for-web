@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML4W - Caleb</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+  <script src="https://storage.googleapis.com/tm-pro/v0.2.0/tm-pro.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="sketch.js"></script>
+
+</head>
+
+<body>
+  <div id="blocker" class="fade" style="display:none;">
+    
+    <h1>Screen is locked until Caleb is detected.</h1>
+
+  </div>
+  <div class="main">
+    <div class="intro">
+      <h2>My Super Secret Webpage.....</h2>
+          <h3>A machine learning model trained to recognize my face will obscure the contents of this "secure" webpage if it can't see me for a few moments. When it detects my face again, the webpage will come back.</h3>
+          
+          
+            <p id="res"></p><span id="prob"></span>
+           
+          
+  </div>
+  
+
+
+
+
+  <p class="secrets">
+    Lorem ipsum dolor sit amet, integer turpis neque nec nunc, enim in lectus convallis nulla, lorem senectus et mattis inceptos, pellentesque ultrices eget phasellus velit justo sem. Metus et, vitae nam cursus, sed non rutrum sed duis tempus, wisi ut quisque in penatibus. A nam facilisis eget eget, sem molestie iaculis libero, cum venenatis quisque vehicula, neque vitae at tortor, ipsum varius nec luctus a a neque. At a ante rutrum maecenas amet, ante sit vulputate, vehicula lectus suspendisse habitasse mauris ante quam. Libero pede wisi mauris felis, risus tristique vehicula vel, urna elit suspendisse aliquet mi vitae non, lectus quis et nulla vestibulum ipsum sed. Adipiscing hac at amet.
+
+Pretium convallis, erat gravida massa libero, nulla dolor ligula, vel eleifend elit non, nec fermentum erat aenean lacus quis. Eu quisque duis volutpat metus quis, suscipit curabitur, sed nulla vivamus fusce, vel tempor. Luctus nisl lacus elit nulla ut est, nec morbi. Ad amet amet, nec rutrum vel elementum ut, aliquam elit elit suscipit donec in ligula, morbi ac orci parturient nec, cursus lobortis mi aliquam egestas sed hymenaeos. Vitae ultricies nam viverra dolor at.
+
+  </p>
+
+<div id="prog"></div>
+</div>
+  
+</body>
+
+<style>
+  div.fade {
+    opacity:0.9;
+    filter: alpha(opacity=90);
+    background-color:#000; 
+    width:100%; 
+    height:100%; 
+    z-index:10;
+    top:0; 
+    left:0; 
+    position:fixed; \
+
+  }
+
+  .blur{
+    filter: blur(3px);
+  }
+
+  .main{
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:3em;
+  }
+  h1, h2, h3{
+    font-family: 'PT Sans', sans-serif;
+  }
+  p{
+    font-family: 'PT Serif', serif;
+  }
+</style>
+
+</html>
