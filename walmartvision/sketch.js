@@ -73,6 +73,8 @@ function gotResult(err,results){
 	}
 
 	classifier.predict(gotResult);
+
+	//code adapted from https://yining1023.github.io/machine-learning-for-the-web/week1-intro/imageClassification-ml5/ImageClassification_Video/
 	
 }
 
@@ -80,7 +82,7 @@ function getProducts(query){
 	console.log(queries);
 		query = queries[Math.floor(Math.random()*queries.length)]
 		console.log(query);
-		let url = "/api.php?query="+encodeURIComponent(query);
+		let url = "api.php?query="+encodeURIComponent(query);
 				console.log('requesting');
 
 				httpGet(url, 'json', false, function(response) {
@@ -115,6 +117,10 @@ const encodeGetParams = p =>
  let s = 'Consumer Profile \n';
  for(var i=0;i<queries.length;i++){
  	s += queries[i]+"\n";
+ }
+
+ if(queries.length > 20){
+	 queries.pop();
  }
 fill('lightgreen');
 textSize(20);

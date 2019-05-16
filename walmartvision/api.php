@@ -1,6 +1,6 @@
 <?php
 
-require_once('secrets.php');
+require_once('./secrets.php');
 
 //set up a log file
 if(!file_exists('cache.json')){
@@ -26,7 +26,7 @@ if(isset($cache->$query)){
 	$query = urlencode($query);
 	$url = "http://api.walmartlabs.com/v1/search?query=$query&apiKey=$apiKey";
 	$res = file_get_contents($url);
-
+//echo $res;
 	$cache->$query = json_decode($res);
 
 	file_put_contents('cache.json', json_encode($cache));
